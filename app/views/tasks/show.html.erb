@@ -1,0 +1,11 @@
+
+<h1>My Task</h1>
+<tr>
+  <td><h2><%= @task.title %></h2></td>
+  <td><%= @task.details %></td>
+  <td><%= @task.completed %></td>
+</tr>
+
+<%= link_to "Task index", tasks_path %>
+<%= link_to "Edit Task", edit_task_path(@task) %>
+<%= link_to "Delete task", task_path(@task), method: :delete %>
